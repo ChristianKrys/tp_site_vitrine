@@ -1,0 +1,91 @@
+
+//--Import des fichiers partiels
+
+// @import './variables'; 
+@import './mixins';
+// @import './placeholders';
+ 
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$marge_interne : 0px; // padding-left:20px padding-right:20px
+$max-width: 1400px;   // largeur maximale prévue pour mon main
+$Hauteur_petit_carre_droit: 240px;
+$Largeur_petit_carre_droit: 25%;
+
+main{
+    width: calc(100% - $marge_interne);
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;  
+    justify-content: space-between;
+}
+
+/* bande d'annonce */
+.barre_annonce{
+    height: 60px;
+    background-color: rgb(199, 246, 199);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-size: 1.2rem;
+}
+.fa-x{
+    cursor: pointer;  
+    margin-left: 20px; 
+}
+
+/* barre de navigation */
+nav{
+    height: 70px;
+    width: 100%;
+    background-color: black;    
+}
+
+
+/* Bande d'accueil */
+.bande_accueil{
+    height: 320px;
+    width: 100%;
+    background-color: rgb(236, 242, 248);
+}
+
+
+/* Menu secondaire */
+.menu_secondaire{
+    height: 70px;
+    width: 100%;
+    border-bottom: 2px solid rgb(236, 242, 248);      
+}
+
+
+/* Contenu principal */
+.contenu_principal{
+    height: 900px;
+    width: 66%;
+    background-color: black;
+}
+
+/* menu de gauche */
+.menu_gauche{
+    height: 300px;
+    width: 28%;
+    background-color: black;
+}
+
+/* footer */
+footer{    
+    width: 100%;  
+    display: flex;  
+    justify-content: center;
+    padding-top: 100px;
+}
+.contenu_footer{
+    background-color: black;
+    width: 85%;
+    height: 800px; 
+}

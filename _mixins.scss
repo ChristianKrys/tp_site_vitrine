@@ -1,0 +1,7 @@
+@mixin cacher_element($element){
+    #{$element}{
+        display: none;
+    }
+}
+
+
